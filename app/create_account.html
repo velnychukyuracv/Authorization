@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Authorization</title>
+
+    <link rel="icon" type="image/png"  href="img/favicon_icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Style-->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body id="create">
+
+     <div class="container" >
+            <h1 class="text-center">Create a new account</h1>
+
+            <form action="#" class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1" id="blockCreateAccount">
+
+                <div class="form-group text-left">
+                    <label for="firstName" class="text-uppercase">First name:</label>
+                    <input type="text" class="form-control text-capitalize" id="firstName" name="firstName" tabindex="1" autofocus>
+                    <p id="firstNameError" class="text-center text-danger">incorrect username or password</p>
+                </div>
+
+                <div class="form-group text-left">
+                    <label for="lastName" class="text-uppercase">Last name:</label>
+                    <input type="text" class="form-control text-capitalize" id="lastName" name="lastName" tabindex="2">
+                    <p id="lastNameError" class="text-center text-danger">incorrect username or password</p>
+                </div>
+
+                <div class="form-group text-left">
+                    <label for="emailCreateAccount" class="text-uppercase">Your e-mail:</label>
+                    <input type="email" class="form-control" id="emailCreateAccount" placeholder="Enter your e-mail" name="email" tabindex="3">
+                    <p id="emailCreateAccountError" class="text-center text-danger">incorrect username or password</p>
+                </div>
+
+                <div class="form-group text-left">
+                    <label for="pwdCreateAccount" class="text-uppercase">Password:</label>
+                    <input type="password" class="form-control" id="pwdCreateAccount" placeholder="Password" name="password" tabindex="4">
+                    <p id="pwdCreateAccountError" class="text-center text-danger ">password must have 6 symbol</p>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-block" id="createAccount" tabindex="5">Create account</button>
+
+                <a href="list.html" class="btn btn-danger btn-block" id="cancel" tabindex="6">Cancel</a>
+            </form>
+
+        </div>
+
+
+     <!-- Modal error-->
+     <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+             <div class="modal-content ">
+                 <div class="modal-header d-flex justify-content-center">
+                     <h5 class="modal-title" id="exampleModalLabel"> Sorry, there was a problem with your request </h5>
+                 </div>
+                 <div class="modal-body">
+                     <div class=" errorNumber  alert alert-danger d-block" role="alert">
+                         <h3  class="text-center text-danger text-uppercase">Error: <span id="numberError"> </span> </h3>
+                         <h5 id="statusError" class="text-center text-danger">  </h5>
+                     </div>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn  btn-danger" data-dismiss="modal">Close</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <!-- Modal success-->
+     <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+             <div class="modal-content ">
+
+                 <div class="modal-header"> </div>
+                 <div class="modal-body">
+                     <div class=" alert alert-success d-block" role="alert">
+                         <h3  class="text-center text-success text-uppercase">Create new user successfully</h3>
+                     </div>
+                 </div>
+                 <div class="modal-footer"></div>
+
+             </div>
+         </div>
+     </div>
+
+
+<!--scripts-->
+
+     <!--jquery-->
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script  src="js/create_account.js"></script>
+    <script  src="js/action.js"></script>
+
+</body>
+</html>
