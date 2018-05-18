@@ -28,7 +28,7 @@ $("#loginSubmit").on("click", function(e) {
         $('#emailError').text("Please include a valid email address.").show();
         $("#loginEmail").addClass("error ");
     } else if ((loginInfo.password === '')|| (loginInfo.password .length != 8)) {
-        $('#passwordError').text("Password cannot be blank or not have 8 symbol").show();
+        $('#passwordError').text("Password cannot be blank or not equals 8 symbol").show();
         $("#loginPWD").addClass("error ");
         $("#loginEmail").addClass("success ");
         $('#emailError').hide();
